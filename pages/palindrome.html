@@ -1,0 +1,115 @@
+<!--Dominick Warner-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width-device-width, inital-scale=1.0">
+<title>DJ</title>
+<nav>
+    <ul>
+        <li><a href="../index.html">Back to Landing Page</a></li>
+    </ul>
+</nav>
+<style>
+    body {
+        padding: 20px;
+         min-height: 100vh;
+         margin: 0 ;
+         background-color: blue;
+         font-family: Arial, sans-serif;
+    }
+     .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+     }
+
+    .player-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: shadow 0 2px 5px rgba(0,0,0, 0.1);
+      margin-bottom: 20px;
+    }
+    /* Style the Header*/
+    h1{
+        color:cadetblue;
+        text-align: center;
+        font-size: 2.5em;
+        margin-top: 30px;
+    }
+        
+    h2{
+    color:black;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    }
+/* Style the song container*/
+.song-container {
+    background: peachpuff;
+    padding: 15px;
+    margin:10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*style the song title*/
+.song-title {
+    font-weight: bold;
+    color:crimson;
+    margin-bottom: 10px;
+}
+/* Style the audio player*/
+audio {
+    margin: 5px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .player-container {
+        padding: 0 15px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="main-container"></div>
+<h1>DJ</h1>
+<div class="player-container">
+    <h2>Rap Music</h2>
+    <div class="song-container">
+        <div class="song-title">Cycle of Resilience</div> <img src="Cycle.png">
+<!--This HTML audio controller lets the user play, pause, volume etc.
+The preload mean that the audio file is downloaded from the server
+ to the client as soon as the page loads
+ -->
+<audio controls preload="auto">
+    <!-- This is the source of the audio file for us to play.-->
+<source src="Cycle of Resilience.mp3" type="audio/mpeg">
+Your Broswer does not support the audio element.
+</audio>
+<div class="song-container"> 
+    <div class="song-title">Rhythm of Resilience</div> <img src="rhythm.png">
+<!--This HTML audio controller lets the user play, pause, volume etc.
+The preload mean that the audio file is downloaded from the server
+to the client as soon as the page loads
+-->
+<audio controls preload="auto"> 
+<!-- This is the source of the audio file for us to play.-->
+<source src="Rhythm of Resilience.mp3" type="audio/mpeg"> 
+Your Broswer does not support the audio element.
+</audio>
+<br><br>
+<div class="player-container">
+    <h2>Sad Music</h2>
+<div class="song-container">
+    <div class="song-title">Chasing Echoes</div> <img src="Chasing Echoes.png">
+<audio controls preload="auto">
+    <!-- This is the source of the audio file for us to play.-->
+<source src="Chasing Echoes.mp3" type="audio/mpeg">
+<div class="song-container"> 
+</audio>
+</audio>
+</audio>
+</div>
+</body>
+</html>
